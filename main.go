@@ -1,13 +1,14 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-var x int
-var y string
-var z bool
+type erno int
+
+var x erno
 
 func main() {
-	fmt.Println(x, y, z)
+	fmt.Println(x)
+	fmt.Printf("%T\n", x)
+	x = 42
+	fmt.Println(x)
 }
