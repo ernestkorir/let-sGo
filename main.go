@@ -2,18 +2,16 @@ package main
 
 import "fmt"
 
-type erno int
-
-var x erno
-var y int
+const a = 42
+const b = 42.78
+const c = "James bond"
 
 func main() {
-	fmt.Println(x)
-	fmt.Printf("%T\n", x)
-	x = 42
-	fmt.Println(x)
-	y = int(x)
-	fmt.Println(y)
-	fmt.Printf("%T\n", y)
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Printf("%T\n", a)
+	fmt.Printf("%T\n", b)
+	fmt.Printf("%T\n", c)
 
 }
